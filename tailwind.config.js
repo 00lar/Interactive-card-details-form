@@ -10,6 +10,12 @@ module.exports = {
       fontFamily: {
       SpaceGrotesk: ['Space Grotesk', 'sans-serif'],
       },
+      colors: {
+        Graydient1: "hsl(249, 99%, 64%)",
+        Graydient2: "hsl(278, 94%, 30%)",
+        RedError:"hsl(0, 100%, 66%)",
+        VeryDarkViolet: "#220930",
+      },
     },
   },
   plugins: [],

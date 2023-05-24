@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.TextBoxDatos {
+@apply w-full border-2 rounded-lg p-3 text-gray-400 mb-5;
+}
