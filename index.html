@@ -25,7 +25,7 @@
     <section class="h-1/3 bg-FondoMobile bg-no-repeat bg-center bg-cover ">
       <div>
         <div class="w-80 h-44 bg-BackCard bg-cover bg-center bg-no-repeat mt-8 ml-10 ">
-          <p class="text-white absolute mt-20 ml-64">000</p>
+          <p class="text-white absolute mt-20 ml-64" id="outputCVC">000</p>
         </div>
         <div class="w-80 h-44 absolute left-4 top-36 bg-FrondCard bg-no-repeat bg-center bg-cover text-white p-6 ">
           <img src="./images/card-logo.svg" class="w-14 mb-8" alt="">
@@ -55,7 +55,7 @@
           </div>
           <div class="col-span-2">
             <label for="CVC">CVC</label>
-            <input type="number" placeholder="e.g. 123" id="CVC" class="TextBoxDatos">
+            <input type="number" maxlength="3" oninput="ActualizarValor()" value="000" placeholder="e.g. 123" id="CVC" class="TextBoxDatos">
           </div>
         </div>
         <button type="submit" class="w-full bg-VeryDarkViolet text-white p-4 rounded-lg">Confirm</button>
@@ -63,7 +63,7 @@
     </section>
   </main>
 
-
+<script src="./main.js"></script>
 
 </body>
 </html>
