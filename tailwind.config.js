@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         FondoMobile: "url('./images/bg-main-mobile.png')",
-        FrondCard: "url('./images/bg-card-front.png')"
+        FrondCard: "url('./images/bg-card-front.png')",
+        BackCard: "url('./images/bg-card-back.png')",
       },
       fontFamily: {
       SpaceGrotesk: ['Space Grotesk', 'sans-serif'],
