@@ -29,10 +29,10 @@
         </div>
         <div class="w-80 h-44 absolute left-4 top-36 bg-FrondCard bg-no-repeat bg-center bg-cover text-white p-6 ">
           <img src="./images/card-logo.svg" class="w-14 mb-8" alt="">
-          <p class="text-xl space-x-4"><span>0000</span><span>0000</span><span>0000</span><span>0000</span></p>
+          <p class="text-xl space-x-4" id="Card_NumberOutput"><span>0000</span><span>0000</span><span>0000</span><span>0000</span></p>
           <div class="flex justify-between pt-4">
-            <p>Jane Applesed</p>
-            <p><span>00</span>/<span>00</span></p>
+            <p id="CardHolderOutput">Jane Applesed</p>
+            <p><span id="MonthOutput">00</span>/<span id="YearOutput">00</span></p>
           </div>
         </div>
       </div>
@@ -41,17 +41,17 @@
     <section class="h-2/3 p-8 pt-20">
       <form>
         <label for="Cardholder_name">CARDHOLDER NAME</label>
-        <input type="text" name="Cardholder_name" id="Cardholder_name" placeholder="e.g. Jane Appleseed" class="TextBoxDatos">
+        <input type="text" oninput="ActualizarValor()" id="Cardholder_name" placeholder="e.g. Jane Appleseed" class="TextBoxDatos">
         <label for="Card_Number">Card Number</label>
-        <input type="number" class="TextBoxDatos" id="Card_Number" placeholder="e.g. 1234 5678 9123 0000">
+        <input type="number" oninput="ActualizarValor()" class="TextBoxDatos" id="Card_Number" placeholder="e.g. 1234 5678 9123 0000">
         <div class="grid grid-cols-4 gap-x-3">
           <div>
             <label for="day">Exp.date</label>
-            <input type="number" placeholder="MM" class="TextBoxDatos" id="day">
+            <input type="number" oninput="ActualizarValor()" placeholder="MM" class="TextBoxDatos" id="Month">
           </div>
           <div>
             <label for="year">(MM/YY)</label>
-            <input type="number" placeholder="YY" class="TextBoxDatos" id="year">
+            <input type="number" oninput="ActualizarValor()" placeholder="YY" class="TextBoxDatos" id="Year">
           </div>
           <div class="col-span-2">
             <label for="CVC">CVC</label>
