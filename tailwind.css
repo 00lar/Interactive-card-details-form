@@ -799,3 +799,13 @@ video {
     padding: 11rem;
   }
 }
+
+@media (min-width: 1280px) {
+  .xl\:ml-28 {
+    margin-left: 7rem;
+  }
+
+  .xl\:p-24 {
+    padding: 6rem;
+  }
+}
