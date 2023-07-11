@@ -3,9 +3,12 @@ const CardHolderOutput = document.querySelector("#CardHolderOutput");
 const Card_NumberOutput = document.querySelector("#Card_NumberOutput");
 const MonthOutput = document.querySelector("#MonthOutput");
 const YearOutput = document.querySelector("#YearOutput");
+const btnConfirm = document.querySelector("#btnConfirm");
+const Year = document.querySelector("#Year");
+const Month = document.querySelector("#Month")
 console.log(CVC);
 
-inputCVC.add
+
 
 function ActualizarValor(){
     let CVC = document.querySelector("#CVC").value;
@@ -31,3 +34,36 @@ function ActualizarValor(){
      const Year = document.querySelector("#Year").value;
      YearOutput.textContent = Year;
 }
+
+
+class TarjetasGuardadas {
+    constructor({
+        Name,CardNumber,DateM,DateY,cvctar
+    })
+    {
+        this.Name = Name;
+        this.CardNumber = CardNumber;
+        this.DateM = DateM;
+        this.DateY = DateY;
+        this.cvctar = cvctar;
+    }
+}
+
+
+btnConfirm.addEventListener("click", GuardarTarjeta);
+
+
+function GuardarTarjeta(event){
+    event.preventDefault();
+    let Tarjeta1 = new TarjetasGuardadas({
+        Name: Cardholder_name.value,
+        CardNumber: Card_Number.value,
+        DateM: Month.value,
+        DateY: Year.value,
+        cvctar: CVC.value,
+    });
+    alert("hola " + Tarjeta1.Name + "con mes" + Tarjeta1.DateM)
+
+
+}
+
